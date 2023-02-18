@@ -7,6 +7,7 @@ package introducao;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -15,6 +16,8 @@ import java.util.List;
 public class PrimeiroLambda {
     
     public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
         
         List<String> amigos = new ArrayList<>();
         amigos.add("Eduardo");
@@ -25,7 +28,6 @@ public class PrimeiroLambda {
         
         List<String> amigos2 = Arrays.asList("Cleber","Matheus");
         amigos2.forEach(amigo -> System.out.println("Meu novo amgigo "+amigo));
-        
     }
     
 }
