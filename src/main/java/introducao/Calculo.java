@@ -9,4 +9,11 @@ public interface Calculo {
     
     double executar(double a, double b);
     
+    default String algumMetodoDefault(){
+        return "Posso ter um método default, que minha interface funcional continuará válida.";
+    }
+    
+    static String algumMetodoStatic(){
+        return "Posso ter um método static, que minha interface funcional continuará válida.";
+    }
 }
