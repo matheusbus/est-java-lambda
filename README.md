@@ -218,13 +218,13 @@ public class ExemploComposicaoPredicate {
         // Negate
         System.out.println(isAzul.or(isCaro).negate().test(carroTeste2));
 
-				/*
-					Resultados:
-						true
-						true
-						true
-						false
-				*/
+	/*
+		Resultados:
+			true
+			true
+			true
+			false
+	*/
 
     }
     
@@ -258,7 +258,7 @@ public class ExemploConsumer {
         
         System.out.println("\nChamando Consumer #02 - ForEach");
         java.util.List<Carro> carros = java.util.Arrays.asList(carro1, carro2, 
-																															 carro3, carro4);
+							       carro3, carro4);
         carros.forEach(meuConsumer); 
         // No método forEach já é esperado um Consumer. Neste caso, o Java entende que deve ser chamado o consumer.accept
         
@@ -359,7 +359,7 @@ public class ExecmploSupplier {
         
         java.util.function.Supplier<List<Carro>> getCarros =
                 () -> { return Arrays.asList(
-													 new Carro("Fiat", "Uno", 10000D, 0.10, "Preto"),
+			   new Carro("Fiat", "Uno", 10000D, 0.10, "Preto"),
                            new Carro("Chery", "Arizzo 5", 78000D, 0.05, "Prata"));
                         };
         
@@ -418,14 +418,14 @@ public class ExemploUnaryOperator {
         System.out.println(resultado1+" é maior que 10:"+ehMaiorQue10.test(resultado1));
         System.out.println(resultado2+" é maior que 10:"+ehMaiorQue10.test(resultado2));
 
-				/*
-							Resultados:
+	/*
+				Resultados:
 
-						2.8284271247461903
-						2.8284271247461903
-						2.8284271247461903 é maior que 10: false
-						2.8284271247461903 é maior que 10: false
-				*/
+			2.8284271247461903
+			2.8284271247461903
+			2.8284271247461903 é maior que 10: false
+			2.8284271247461903 é maior que 10: false
+	*/
 
 		}
     
