@@ -31,8 +31,6 @@ public class Carro {
     public void setCor(String cor) {
         this.cor = cor;
     }
-
-    
     
     public String getMarca() {
         return marca;
