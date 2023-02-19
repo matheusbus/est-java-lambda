@@ -20,8 +20,12 @@ public class ExemploComposicaoPredicate {
         System.out.println(isAzul.test(carroTeste1));
         System.out.println(isAzul.and(isCaro).test(carroTeste1));
         System.out.println(isAzul.test(carroTeste2));
+        // And
         System.out.println(isAzul.and(isCaro).test(carroTeste2));
-        
+        // Or
+        System.out.println(isAzul.or(isCaro).test(carroTeste2));
+        // Negate
+        System.out.println(isAzul.or(isCaro).negate().test(carroTeste2));
         
     }
     
