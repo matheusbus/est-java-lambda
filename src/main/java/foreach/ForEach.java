@@ -24,10 +24,19 @@ public class ForEach {
         System.out.println("\nLambda #01");
         nomes.forEach(nome -> System.out.println("Nome: "+nome));
         
-        System.out.println("\nLambda #02 - Com Method Reference");
+        System.out.println("\nMethod Reference #01");
         nomes.forEach(System.out::println);
         
+        System.out.println("\nLambda #02");
+        nomes.forEach(nome -> imprimePersonalizado(nome));
         
+        System.out.println("\nMethod Reference #02");
+        nomes.forEach(ForEach::imprimePersonalizado);
+        
+    }
+    
+    public static void imprimePersonalizado(String nome){
+        System.out.println("Imprimindo personalizado: "+nome);
     }
     
 }
