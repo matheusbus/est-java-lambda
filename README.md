@@ -1,5 +1,23 @@
 # Java - Estudos sobre Expressões Lambda
 
+# Sumário
+
+```
+1 - Primeiras Expressões Lambda
+      1.1 - Atribuindo Lambda ao valor de Variável de tipo Interface
+2 - Interfaces funcionains @functionalInterface
+      2.1 - Utilizando Interfaces funcionais nativas do Java
+3 - ForEach Funcional
+      3.1 - Method Reference
+4 - Interface Funcional: Predicate
+      4.1 Composição de Predicate
+5 - Interface Funcional: Consumer
+6 - Interface Funcional: Function
+7 - Interface Funcional: Supplier
+8 - Interface Funcional: UnaryOperator
+9 - Interfaces Funcionais: BinaryOperator e BiFunction
+10 - Desafio Expressões Lambda com interfaces funcionais
+```
 # 1 - Primeiras expressões Lambda
 
 ---
@@ -376,7 +394,7 @@ Para chamar o Supplier:
 
 ---
 
-# 8 - Unary Operator
+# 8 - Interface Funcional: UnaryOperator
 
 ---
 
